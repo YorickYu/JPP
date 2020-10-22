@@ -2,6 +2,26 @@
 
 JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
+
+
+***在这里：***
+
+你可以记录有趣的案例Demo
+
+你可以链接有深度的博客文章
+
+你可以分享自己的学习历程
+
+
+
+这个计划需要你们的加入 Peace~Yo
+
+
+
+---
+
+
+
 ### 计算机基础篇
 
 
@@ -12,7 +32,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ### J2SE基础
 
-
+- [反证CPU乱序执行](http://yloopdaed.icu/2020/10/19/CPU-Out-of-Order/)
 
 ### 基本框架篇
 
@@ -48,6 +68,12 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ### 面试篇
 
+
+
+
+### LeeCode
+
+- [sliding window algorithm](http://yloopdaed.icu/2020/10/12/slide-windows/)
 
 
 
