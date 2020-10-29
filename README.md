@@ -33,6 +33,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 ### J2SE基础
 
 - [反证CPU乱序执行](http://yloopdaed.icu/2020/10/19/CPU-Out-of-Order/)
+- [Java对象的内存布局](http://localhost:4000/2020/10/29/memory-layout-of-java-object/)
 
 ### 基本框架篇
 
