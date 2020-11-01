@@ -47,7 +47,8 @@ public class ConcurrentModificationExceptionDemo {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 100; i++) {
+                for (int i = 0; i < 10000; i++) {
+                    System.out.println(i);
                     m.put(i, String.valueOf(i).hashCode());
                 }
             }
@@ -56,7 +57,8 @@ public class ConcurrentModificationExceptionDemo {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 150; i < 200; i++) {
+                for (int i = 10000; i < 20000; i++) {
+                    System.out.println(i);
                     m.put(i, String.valueOf(i).hashCode());
                 }
             }
@@ -70,8 +72,8 @@ public class ConcurrentModificationExceptionDemo {
 
 
     public static void main(String[] args) throws InterruptedException {
-        ConcurrentModificationExceptionDemo.threadRemove();
-//        ConcurrentModificationExceptionDemo.atomicTest();
+//        ConcurrentModificationExceptionDemo.threadRemove();
+        ConcurrentModificationExceptionDemo.atomicTest();
 
 
     }
