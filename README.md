@@ -36,6 +36,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [Java对象的内存布局](http://yloopdaed.icu/2020/10/29/memory-layout-of-java-object/)
 - [JDK1.7 HashMap 链表头插疑问？](http://yloopdaed.icu/2020/10/31/question-of-hashmap-put/)
 - [HashMap modCount fast-fail](http://yloopdaed.icu/2020/11/01/hashmap-modCount/)
+- [JDK1.7 ConcurrentHashMap 两次数组下标计算问题](http://yloopdaed.icu/2020/11/03/concurrenthashmap-two-array-index/)
 
 ### 基本框架篇
 
