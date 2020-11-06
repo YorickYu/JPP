@@ -21,7 +21,6 @@ public class TailInsert {
     }
 
     public static void main(String[] args) {
-        HashMap
 
         Node tab = new Node(0,0,null); // node链表
         Node p = tab;
