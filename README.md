@@ -83,5 +83,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ### 思维导图
 
-![HashMap](https://github.com/YorickYu/JPP/tree/main/HashMap_xmind/HashMapxmind.png)
+图片过大可能加载不出，请自行查看：项目根目录下xx_xmind文件夹
+
+![HashMap](https://github.com/YorickYu/JPP/raw/main/HashMap_xmind/HashMapxmind.png)
 
