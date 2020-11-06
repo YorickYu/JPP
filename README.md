@@ -21,7 +21,6 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 ---
 
 
-
 ### 计算机基础篇
 
 
@@ -82,6 +81,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [sliding window algorithm](http://yloopdaed.icu/2020/10/12/slide-windows/)
 - [reverse words](http://yloopdaed.icu/2020/11/03/reverse-words/)
 
+### 思维导图
 
-
+![HashMap](https://github.com/YorickYu/JPP/tree/main/HashMap_xmind/HashMapxmind.png)
 
