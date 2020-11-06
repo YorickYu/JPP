@@ -14,9 +14,24 @@ public class TailInsert {
             this.next = next;
         }
 
-        boolean hashNext() {
-            return next != null;
-        }
+    }
+
+    private static void nextpointer() {
+        Node a = null; // new Node(0, 0, null);
+        Node b = null; // new Node(1, 1, null);
+
+        Node c = new Node('c', 'c', null);
+
+        b = c;
+        a = c;
+
+        c = new Node(8,8, null);
+
+        a.next = c;
+
+        a = c;
+
+        System.out.println("debugger");
 
     }
 
@@ -69,5 +84,9 @@ public class TailInsert {
         System.out.println(loHead);
         System.out.println(hiHead);
 
+        TailInsert.nextpointer();
+
     }
+
+
 }
