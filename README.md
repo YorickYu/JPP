@@ -83,7 +83,11 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ### 思维导图
 
-图片过大可能加载不出，请自行查看：项目根目录下xx_xmind文件夹
+#### HashMap
+
+图片过大可能加载不出，请自行查看：项目根目录下HashMap_xmind文件夹
+
+最新更新：修正HashMap1.8中变树阈值部分泊松分布的概率分布图
 
 ![HashMap](https://github.com/YorickYu/JPP/raw/main/HashMap_xmind/HashMapxmind.png)
 
