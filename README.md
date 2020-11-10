@@ -91,3 +91,10 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ![HashMap](https://github.com/YorickYu/JPP/raw/main/HashMap_xmind/HashMap_xmind2.0.png)
 
+#### 网络通信
+
+操作系统层面
+
+![网络通信](https://github.com/YorickYu/JPP/raw/main/IO_xmind/IO.png)
+
+
