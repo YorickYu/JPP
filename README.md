@@ -25,7 +25,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 - [BIO/NIO/多路复用 原理与区别](http://yloopdaed.icu/2020/11/11/about-IO/)
 
-
+- [和挖矿程序拼到底！](http://yloopdaed.icu/2020/11/11/centos-attack/)
 
 ### 常用工具篇
 
