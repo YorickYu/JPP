@@ -82,6 +82,8 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 - [sliding window algorithm](http://yloopdaed.icu/2020/10/12/slide-windows/)
 - [reverse words](http://yloopdaed.icu/2020/11/03/reverse-words/)
+- [将 x 减到 0 的最小操作数(失败)](http://yloopdaed.icu/2020/11/16/min-operations/)
+- [两个数组的交集 II](http://yloopdaed.icu/2020/11/16/intersection-of-array/)
 
 ### 思维导图
 
