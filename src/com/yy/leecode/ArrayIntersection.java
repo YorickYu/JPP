@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 
+
+// leetcode 350题 两个数组的交集2
 public class ArrayIntersection {
 
     // 1 hashmap
