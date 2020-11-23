@@ -2,7 +2,7 @@
 
 JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
-<img src="https://yloopdaed-oss.oss-cn-beijing.aliyuncs.com/JPPlogo.png" alt="LOGO" style="zoom:50%;" />
+<img src="https://yloopdaed-public.oss-cn-shanghai.aliyuncs.com/JPPlogo.png" alt="LOGO" style="zoom:50%;" />
 
 ***在这里：***
 
