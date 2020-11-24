@@ -84,6 +84,8 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [reverse words](http://yloopdaed.icu/2020/11/03/reverse-words/)
 - [将 x 减到 0 的最小操作数(失败)](http://yloopdaed.icu/2020/11/16/min-operations/)
 - [两个数组的交集 II](http://yloopdaed.icu/2020/11/16/intersection-of-array/)
+- [LeetCode X 京东 周赛挑战（失败）](https://yloopdaed.icu/2020/11/16/min-operations/)
+- [LeetCode 最长公共前缀（4行代码 0ms）](https://yloopdaed.icu/2020/11/18/longest-common-prefix-string/)
 
 ### 思维导图
 
