@@ -23,9 +23,9 @@ public class TestAnnotation {
         return m;
     }
 
-    @Log.MIDDLE
-    public void aroundtest111() {
-
+    @Log.MIDDLE(description = "标记测试方法")
+    public void aroundTest(String s) {
+        // TODO..
     }
 
     @MyAnnotation(descrption = "test field using")

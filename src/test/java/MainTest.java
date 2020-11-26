@@ -13,7 +13,6 @@ public class MainTest {
     @Autowired
     TestAnnotation testAnnotation;
 
-
     @Test
     public void test() {
         // 👌
@@ -22,7 +21,7 @@ public class MainTest {
 
         testAnnotation.resulttest777("123", 123999);
 
-        testAnnotation.aroundtest111();
+        testAnnotation.aroundTest("paramstring");
     }
 
 }
