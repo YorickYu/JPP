@@ -56,6 +56,10 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 ### 搜索引擎篇
 
 
+### 小工具
+
+- [最大化满足你需求的日志系统](https://github.com/YorickYu/simple_log_project)
+
 
 ### 大数据篇
 
