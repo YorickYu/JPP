@@ -103,13 +103,13 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 最新更新：修正HashMap1.8中变树阈值部分泊松分布的概率分布图
 
-![HashMap](https://github.com/YorickYu/JPP/raw/main/HashMap_xmind/HashMap_xmind2.0.png)
+![HashMap](https://github.com/YorickYu/Java_HashMap_summary/blob/main/images/HashMap_xmind2.0.png)
 
 #### 网络通信
 
 操作系统层面
 
-![网络通信](https://github.com/YorickYu/JPP/raw/main/IO_xmind/IO.png)
+![网络通信](https://github.com/YorickYu/Java_IO_summary/blob/main/images/IO.png)
 
 #### 常见面试知识点整理
 
