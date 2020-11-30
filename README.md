@@ -40,7 +40,6 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [HashMap modCount fast-fail](http://yloopdaed.icu/2020/11/01/hashmap-modCount/)
 - [JDK1.7 ConcurrentHashMap 两次数组下标计算问题](http://yloopdaed.icu/2020/11/03/concurrenthashmap-two-array-index/)
 - [JDK1.8 HashMap resize loTail.next=e loTail=e](http://yloopdaed.icu/2020/11/06/hashmap-resize-lotail/)
-- [尝试阅读AQS源码（ReentrantLock 加锁）](https://yloopdaed.icu/2020/11/29/AQS/)
 
 ### 基本框架篇
 
@@ -73,6 +72,10 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 ### 网关
 
 
+### 并发编程
+
+- [尝试阅读AQS源码（ReentrantLock 加锁）](https://yloopdaed.icu/2020/11/29/AQS/)
+
 
 ### 容器篇
 
@@ -81,7 +84,6 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 ### 面试篇
 
 - [B站三太子敖丙 面试录播整理](https://github.com/YorickYu/Java-abilities-summary)
-
 
 
 ### LeeCode
