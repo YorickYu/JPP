@@ -74,7 +74,9 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ### 并发编程
 
+- [thread.interrupt() 线程中断](https://yloopdaed.icu/2020/11/30/interrupt/)
 - [尝试阅读AQS源码（ReentrantLock 加锁）](https://yloopdaed.icu/2020/11/29/AQS/)
+- [尝试阅读AQS源码（countdownlatch await）](https://yloopdaed.icu/2020/11/30/AQS-countdownlatch/)
 
 
 ### 容器篇
