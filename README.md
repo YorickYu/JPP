@@ -80,6 +80,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ### 面试篇
 
+- [B站三太子敖丙 面试录播整理](https://github.com/YorickYu/Java-abilities-summary)
 
 
 
@@ -107,5 +108,9 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 操作系统层面
 
 ![网络通信](https://github.com/YorickYu/JPP/raw/main/IO_xmind/IO.png)
+
+#### 常见面试知识点整理
+
+![interview](https://github.com/YorickYu/Java-abilities-summary/blob/main/images/xmind.png)
 
 
