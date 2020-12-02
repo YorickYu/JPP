@@ -1,3 +1,3 @@
 #### 常见面试知识点整理
 
-<!-- ![网络通信](https://github.com/YorickYu/JPP/raw/main/IO_xmind/IO.png) -->
+![面试知识](https://github.com/YorickYu/JPP/blob/main/KNG_xmind/JavaInterview.png)
