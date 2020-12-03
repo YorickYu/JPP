@@ -12,7 +12,9 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Method;
 import java.time.Duration;
 import java.time.LocalTime;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 
@@ -20,17 +22,18 @@ import java.util.Set;
 @Aspect
 public class LogAspect {
 
-    private final Logger logger = LoggerFactory.getLogger(LogAspect.class);
-
-    private static final Set<Count<Integer>> SET = new HashSet<>();
-    private static final ThreadLocal<Count<Integer>> TL = ThreadLocal.withInitial(() -> {
-        Count<Integer> requestCount = new Count<>(0);
-        SET.add(requestCount);
-        return requestCount;
+    private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
+    private static final Set<Counter<HashMap<String, Integer>>> SET = new HashSet<>();
+    private static final ThreadLocal<Counter<HashMap<String, Integer>>> TL = ThreadLocal.withInitial(() -> {
+        Counter<HashMap<String, Integer>> counter = new Counter();
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        counter.t = hashMap;
+        saveAdd(counter);
+        return counter;
     });
 
-    private synchronized void saveAdd(Count<Integer> c) {
-        SET.add(c);
+    private static synchronized void saveAdd(Counter counter) {
+        SET.add(counter);
     }
 
     @Pointcut("@annotation(com.yy.annotation.Log.START)")
@@ -61,10 +64,16 @@ public class LogAspect {
         return description;
     }
 
+    private void count(String method) {
+        Counter<HashMap<String, Integer>> counter = TL.get();
+        HashMap map = counter.t;
+        Integer integer = (Integer) map.get(method);
+        if (integer == null)
+            integer = 0;
+        map.put(method, integer+1);
+    }
+
     private void structure(JoinPoint joinPoint, LogType type) {
-        // 累计请求次数
-        Count<Integer> count = TL.get();
-        count.setT(count.getT()+1);
 
         String PARAMSTRING = "ARGS: ";
         String METHODSTRING;
@@ -92,6 +101,8 @@ public class LogAspect {
         }
         logger.info(PARAMSTRING);
         logger.info(new String(new char[temp.length()]).replace("\0", "="));
+
+        count(METHODSTRING);
     }
 
     @Before("before()")
@@ -104,11 +115,6 @@ public class LogAspect {
     public void after(JoinPoint joinPoint, Object result) {
         structure(joinPoint, LogType.END);
         logger.info("RESULT: "+ result.toString());
-        /* TODO */
-    }
-
-    @AfterThrowing(value = "after()", throwing = "exception")
-    public void exce(JoinPoint joinPoint, Exception exception) {
         /* TODO */
     }
 
@@ -133,19 +139,22 @@ public class LogAspect {
      * 获取标记方法的总请求数量
      * @return total requset count
      */
-    public Integer requestStatus() {
-        return SET.stream().map(Count::getT).reduce(Integer::sum).orElse(-1);
+    public static void stat() {
+        SET.stream().map(Counter::getT).forEach( stringIntegerHashMap -> {
+            Iterator<String> iterator = stringIntegerHashMap.keySet().iterator();
+            while (iterator.hasNext()) {
+                String next = iterator.next();
+                logger.info(next +":"+stringIntegerHashMap.get(next));
+            }
+        });
     }
 
     /**
      * 持久化计数
      * @param <T>
      */
-    public static class Count<T> {
+    public static class Counter<T> {
         T t;
-        public Count(T t) {
-            this.t = t;
-        }
         public T getT() {
             return t;
         }

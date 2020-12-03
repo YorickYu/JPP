@@ -28,6 +28,13 @@ public class interview {
     public static void main(String[] args) {
 
         Counter counter = new Counter();
+        String s = "a";
+        Object o = s;
+        System.out.println(o.getClass());
+        System.out.println(o.getClass().getSuperclass());
+
+        System.out.println(s.toString());
+        System.out.println(o.toString());
 
 
         new Thread(() -> {
