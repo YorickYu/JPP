@@ -10,7 +10,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import java.lang.reflect.Method;
-import java.util.Arrays;
+import java.time.Duration;
+import java.time.LocalTime;
+import java.util.HashSet;
+import java.util.Set;
 
 
 @Component
@@ -19,12 +22,23 @@ public class LogAspect {
 
     private final Logger logger = LoggerFactory.getLogger(LogAspect.class);
 
+    private static final Set<Count<Integer>> SET = new HashSet<>();
+    private static final ThreadLocal<Count<Integer>> TL = ThreadLocal.withInitial(() -> {
+        Count<Integer> requestCount = new Count<>(0);
+        SET.add(requestCount);
+        return requestCount;
+    });
+
+    private synchronized void saveAdd(Count<Integer> c) {
+        SET.add(c);
+    }
+
     @Pointcut("@annotation(com.yy.annotation.Log.START)")
-    private void startcut(){}
+    private void before(){}
     @Pointcut("@annotation(com.yy.annotation.Log.END)")
-    private void aftercut(){}
+    private void after(){}
     @Pointcut("@annotation(com.yy.annotation.Log.MIDDLE)")
-    private void aroundcut(){}
+    private void around(){}
 
     private String getDescription(Object target, String method, LogType type) {
         Class<?> aClass = target.getClass();
@@ -48,6 +62,10 @@ public class LogAspect {
     }
 
     private void structure(JoinPoint joinPoint, LogType type) {
+        // 累计请求次数
+        Count<Integer> count = TL.get();
+        count.setT(count.getT()+1);
+
         String PARAMSTRING = "ARGS: ";
         String METHODSTRING;
         // 获取参数值
@@ -76,38 +94,64 @@ public class LogAspect {
         logger.info(new String(new char[temp.length()]).replace("\0", "="));
     }
 
-    @Before("startcut()")
+    @Before("before()")
     public void before(JoinPoint joinPoint) {
         structure(joinPoint, LogType.START);
-        // 埋点\布隆 ...
+        /* TODO */
     }
 
-    @AfterReturning(value = "aftercut()" ,returning = "result")
+    @AfterReturning(value = "after()" ,returning = "result")
     public void after(JoinPoint joinPoint, Object result) {
         structure(joinPoint, LogType.END);
         logger.info("RESULT: "+ result.toString());
-        // ...
+        /* TODO */
     }
 
-    @AfterThrowing(value = "aftercut()", throwing = "exception")
+    @AfterThrowing(value = "after()", throwing = "exception")
     public void exce(JoinPoint joinPoint, Exception exception) {
-
+        /* TODO */
     }
 
-    @Around("aroundcut()")
+    @Around("around()")
     public Object middle(ProceedingJoinPoint joinPoint) {
         Object proceed = null;
         try {
-            long l = System.currentTimeMillis();
+            LocalTime start = LocalTime.now();
             structure(joinPoint, LogType.MIDDLE);
             proceed = joinPoint.proceed(joinPoint.getArgs());
-            String last = String.valueOf(System.currentTimeMillis()-l);
-            logger.info("TIME: "+last);
-            // ...
+            /* TODO */
+            LocalTime end = LocalTime.now();// 终止时间
+            Duration duration = Duration.between(start, end);
+            logger.info("TIME: "+duration.toMillis()+"ms");
         } catch (Throwable throwable) {
             throwable.printStackTrace();
         }
         return proceed;
+    }
+
+    /**
+     * 获取标记方法的总请求数量
+     * @return total requset count
+     */
+    public Integer requestStatus() {
+        return SET.stream().map(Count::getT).reduce(Integer::sum).orElse(-1);
+    }
+
+    /**
+     * 持久化计数
+     * @param <T>
+     */
+    public static class Count<T> {
+        T t;
+        public Count(T t) {
+            this.t = t;
+        }
+        public T getT() {
+            return t;
+        }
+        public void setT(T t) {
+            this.t = t;
+        }
     }
 
 }

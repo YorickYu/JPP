@@ -20,8 +20,6 @@ class Counter {
         return (int) count;
     }
 
-    ConcurrentHashMap
-
 }
 
 
