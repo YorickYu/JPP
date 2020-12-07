@@ -15,7 +15,7 @@ public class LongestSubstring {
 //                start = map.get(s.charAt(end));
             }
             ans = Math.max(ans, end - start + 1);
-            map.put(s.charAt(end), end + 1);
+            map.put(alpha, end + 1);
         }
         return ans;
     }
