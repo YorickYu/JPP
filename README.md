@@ -42,7 +42,10 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [JDK1.8 HashMap resize loTail.next=e loTail=e](http://yloopdaed.icu/2020/11/06/hashmap-resize-lotail/)
 
 ### 基本框架篇
+#### Spring篇
 
+- [Spring:快速上手Spring](http://lan.yitian.online/blog/?p=88)
+- [Spring:概述及IOC理论推导](http://lan.yitian.online/blog/?p=86)
 
 
 ### 消息队列
