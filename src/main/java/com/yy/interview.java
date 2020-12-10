@@ -26,7 +26,7 @@ class Counter {
 public class interview {
 
     public static void main(String[] args) {
-
+    	System.out.print("aaa");
         Counter counter = new Counter();
         String s = "a";
         Object o = s;
