@@ -24,9 +24,9 @@ public class JolTest {
         OrderTest d = new OrderTest();
         System.out.println(ClassLayout.parseInstance(d).toPrintable());
 
-//        synchronized (o) {
-//            System.out.println(ClassLayout.parseInstance(o).toPrintable());
-//        }
+        synchronized (o) {
+            System.out.println(ClassLayout.parseInstance(o).toPrintable());
+        }
 
     }
 }
