@@ -42,7 +42,9 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [JDK1.8 HashMap resize loTail.next=e loTail=e](http://yloopdaed.icu/2020/11/06/hashmap-resize-lotail/)
 
 ### 基本框架篇
-#### Spring篇
+
+
+### Spring篇
 
 - [Spring:概述及IOC理论推导](https://lan.yitian.online/blog/?p=86)
 - [Spring:快速上手Spring](https://lan.yitian.online/blog/?p=88)
@@ -82,7 +84,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [thread.interrupt() 线程中断](https://yloopdaed.icu/2020/11/30/interrupt/)
 - [尝试阅读AQS源码（ReentrantLock 加锁）](https://yloopdaed.icu/2020/11/29/AQS/)
 - [尝试阅读AQS源码（countdownlatch await）](https://yloopdaed.icu/2020/11/30/AQS-countdownlatch/)
-
+- [尝试阅读ThreadLocal源码](https://yloopdaed.icu/2020/12/10/threadlocal/)
 
 ### 容器篇
 
