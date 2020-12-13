@@ -83,7 +83,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 - [说说我对happens-before原则和as-if-serial语义的理解](https://yloopdaed.icu/2020/12/07/whatis-happensbefore/)
 - [thread.interrupt() 线程中断](https://yloopdaed.icu/2020/11/30/interrupt/)
-- [尝试阅读AQS源码（ReentrantLock 加锁）](https://yloopdaed.icu/2020/11/29/AQS/)
+- [尝试阅读AQS源码（ReentrantLock 加锁）](https://yloopdaed.icu/2020/11/29/AQS-reentrantlock/)
 - [尝试阅读AQS源码（countdownlatch await）](https://yloopdaed.icu/2020/11/30/AQS-countdownlatch/)
 - [尝试阅读ThreadLocal源码（1）](https://yloopdaed.icu/2020/12/10/threadlocal/)
 - [尝试阅读ThreadLocal源码（2）](https://yloopdaed.icu/2020/12/13/threadlocal2/) 
