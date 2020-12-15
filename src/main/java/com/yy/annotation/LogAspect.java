@@ -12,10 +12,7 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Method;
 import java.time.Duration;
 import java.time.LocalTime;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 
 @Component
@@ -23,7 +20,7 @@ import java.util.Set;
 public class LogAspect {
 
     private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
-    private static final Set<Counter<HashMap<String, Integer>>> SET = new HashSet<>();
+    private static final Set<Counter<HashMap<String, Integer>>> SET = Collections.synchronizedSet(new HashSet<>());
     private static final ThreadLocal<Counter<HashMap<String, Integer>>> TL = ThreadLocal.withInitial(() -> {
         Counter<HashMap<String, Integer>> counter = new Counter();
         HashMap<String, Integer> hashMap = new HashMap<>();
