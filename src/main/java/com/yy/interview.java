@@ -16,12 +16,12 @@ class Counter {
     public void add() {
         count++;
     }
+
     public int size() {
         return (int) count;
     }
 
 }
-
 
 public class interview {
 

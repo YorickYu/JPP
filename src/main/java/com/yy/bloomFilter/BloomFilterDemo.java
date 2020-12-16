@@ -4,6 +4,14 @@ import com.google.common.base.Charsets;
 import com.google.common.hash.BloomFilter;
 import com.google.common.hash.Funnels;
 
+/**
+ * 使用场景：
+ * 黑名单
+ * URL去重
+ * 单词拼写检查
+ * Key-Value缓存系统的Key校验（缓存穿透）
+ * ID校验
+ */
 public class BloomFilterDemo {
 
     public static void main(String[] args) {
