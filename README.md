@@ -85,8 +85,10 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [thread.interrupt() 线程中断](https://yloopdaed.icu/2020/11/30/interrupt/)
 - [尝试阅读AQS源码（ReentrantLock 加锁）](https://yloopdaed.icu/2020/11/29/AQS-reentrantlock/)
 - [尝试阅读AQS源码（countdownlatch await）](https://yloopdaed.icu/2020/11/30/AQS-countdownlatch/)
-- [尝试阅读ThreadLocal源码（1）](https://yloopdaed.icu/2020/12/10/threadlocal/)
-- [尝试阅读ThreadLocal源码（2）](https://yloopdaed.icu/2020/12/13/threadlocal2/) 
+- [尝试阅读ThreadLocal源码-基础部分](https://yloopdaed.icu/2020/12/10/threadlocal/)
+- [尝试阅读ThreadLocal源码-Hash冲突、启动/探测式清理、扩容](https://yloopdaed.icu/2020/12/13/threadlocal2/) 
+
+
 
 ### 容器篇
 
