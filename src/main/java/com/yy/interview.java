@@ -27,6 +27,11 @@ public class interview {
 
     public static void main(String[] args) {
 
+        Integer iz = 1000;
+        Integer jz = 1001;
+        System.out.println(iz<=jz);
+
+
         Counter counter = new Counter();
         String s = "a";
         Object o = s;
