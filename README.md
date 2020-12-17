@@ -126,6 +126,8 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 #### 常见面试知识点整理
 
+最新更新：ThreadLocal知识点补充
+
 ![interview](https://github.com/YorickYu/Java-abilities-summary/blob/main/images/xmind.png)
 
 
