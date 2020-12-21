@@ -69,9 +69,11 @@ public class ClimbStairs {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ClimbStairs climbStairs = new ClimbStairs();
         int i = climbStairs.climbStairs_rdp(5);
         System.out.println("i = " + i);
     }
+
+
 }
