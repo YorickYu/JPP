@@ -1,4 +1,4 @@
-package com.yy.leecode;
+package com.yy.leecode.slidingWindow;
 
 import java.util.HashMap;
 import java.util.Map;

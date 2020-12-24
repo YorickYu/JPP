@@ -21,8 +21,8 @@ import java.util.HashMap;
  */
 
 //private class  LinkNode
-public class addTwoNumbers {
-//    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+public class AddTwoNumbers {
+//    public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
 //
 //    }
 

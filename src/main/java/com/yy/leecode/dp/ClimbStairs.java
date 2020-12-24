@@ -73,6 +73,11 @@ public class ClimbStairs {
         ClimbStairs climbStairs = new ClimbStairs();
         int i = climbStairs.climbStairs_rdp(5);
         System.out.println("i = " + i);
+
+        int a = 1;
+        if (--a == 0) {
+            System.out.println(a);
+        }
     }
 
 
