@@ -1,12 +1,10 @@
-package com.yy;
+package com.yy.jol;
 
 /*
     面试题：
     实现一个计数器，提供两个方法：add、size
     需求：两个线程，线程1添加元素，线程2监听元素，当元素个数到5时，线程2提示并中断监听
  */
-
-import java.util.concurrent.ConcurrentHashMap;
 
 class Counter {
     public long p1, p2, p3, p4, p5, p6, p7;

@@ -1,5 +1,6 @@
-package com.yy.concurrentHashMap;
+package com.yy.lock;
 
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class TryLockDemo {
@@ -10,7 +11,7 @@ public class TryLockDemo {
             rl.lock();
             System.out.println("thread 1 执行");
             try {
-                Thread.sleep(1000);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -20,20 +21,24 @@ public class TryLockDemo {
 
         Thread.sleep(100);
 
+        AtomicInteger a = new AtomicInteger(10);
+
         new Thread(()->{
 
             while (!rl.tryLock()) {
                 System.out.println("找锁");
-                rl.lock();
+                a.addAndGet(10); // do something
+                rl.lock(); //  不加异常，java.lang.IllegalMonitorStateException
                 break;
             }
-            System.out.println("thread 1 执行");
+            System.out.println("thread 2 执行: a = " + a.get());
+
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("thread 1 结束");
+            System.out.println("thread 2 结束");
             rl.unlock();
         }).start();
     }
