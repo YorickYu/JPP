@@ -22,7 +22,6 @@ public class WhatisReflectionField {
     }
 
     public static void main(String[] args) throws Exception {
-        Student student = new Student();
         Class stdClass = Student.class;
         // 获取public字段"score":
         System.out.println(stdClass.getField("score"));
