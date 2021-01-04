@@ -102,7 +102,9 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 - [B站三太子敖丙 面试录播整理](https://github.com/YorickYu/Java-abilities-summary)
 
-### LeeCode/算法
+### 算法
+
+#### &LeeCode
 
 - [reverse words](http://yloopdaed.icu/2020/11/03/reverse-words/)
 - [将 x 减到 0 的最小操作数(失败)](http://yloopdaed.icu/2020/11/16/min-operations/)
@@ -124,7 +126,9 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 #### HashMap
 
-图片过大可能加载不出，请自行查看：项目根目录下HashMap_xmind文件夹
+图片过大可能加载不出，请自行至项目相应的文件查看
+
+
 
 最新更新：修正HashMap1.8中变树阈值部分泊松分布的概率分布图
 
@@ -138,7 +142,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 #### 常见面试知识点整理
 
-最新更新：ThreadLocal知识点补充
+最新更新：Redis相关
 
 ![interview](https://github.com/YorickYu/Java-abilities-summary/blob/main/images/xmind.png)
 
