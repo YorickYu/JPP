@@ -68,6 +68,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 ### 小工具
 
 - [最大化满足你需求的日志系统](https://github.com/YorickYu/simple_log_project)
+- [snowflake 雪花算法封装](https://yloopdaed.icu/2021/01/04/snowflake-config/)
 
 
 ### 大数据篇
@@ -114,6 +115,10 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [sliding window algorithm](http://yloopdaed.icu/2020/10/12/slide-windows/)
 - [LeeCode 30 串联所有单词的子串](https://yloopdaed.icu/2020/12/24/sw-findsubwords/)
 - [抖音面试题：是否存在无序子串](https://yloopdaed.icu/2020/12/23/sw-findsubstring/)
+
+#### &LRU
+
+- [手写一个简陋的LRU算法](https://yloopdaed.icu/2021/01/04/handle-redis-LRU/)
 
 ### 思维导图
 
