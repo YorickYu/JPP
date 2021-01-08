@@ -2,10 +2,10 @@ package com.yy.concurrentHashMap;
 
 public class logn {
     public static void main(String[] args) {
-        int up = up(16);
-            System.out.println("up = " + up);
-        int down = down(16);
-            System.out.println("down = " + down);
+        int up = up(17);
+            System.out.println("up = " + up); // 32
+        int down = down(17);
+            System.out.println("down = " + down); // 16
     }
 
 

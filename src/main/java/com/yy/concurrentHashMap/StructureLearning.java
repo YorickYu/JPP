@@ -19,6 +19,9 @@ public class StructureLearning {
     }
 
     public static void main(String[] args) {
+        ConcurrentHashMap<Object, Object> map = new ConcurrentHashMap<>();
+        map.putIfAbsent("test", "abc");
+
         Class sc = String[].class;
         int ss = UNSAFE.arrayIndexScale(sc); // 4
         int sbase = UNSAFE.arrayBaseOffset(sc); //16
