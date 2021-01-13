@@ -28,9 +28,7 @@ public class ThreadLocalTest {
     public static void main(String[] args) {
         ThreadLocal t1 = new ThreadLocal();
         t1.set("t1");
-//        t1.set("asdads");
         ThreadLocal t2 = new ThreadLocal();
-//        t2.set("t2");
 
         new ThreadLocal<>().set("be GC");
         System.gc();
