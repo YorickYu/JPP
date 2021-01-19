@@ -1,10 +1,6 @@
 package com.yy.thread;
 
-import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.yy.thread.pool.ThreadPoolTools;
-import org.quartz.simpl.SimpleThreadPool;
-
-import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -14,7 +10,7 @@ public class ExecutorsTest {
         ThreadPoolTools threadPoolTools = new ThreadPoolTools();
         long start = System.currentTimeMillis();
         AtomicInteger atomicInteger = new AtomicInteger(0);
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 50; i++) {
             threadPoolTools.execute(() -> {
                 System.out.println("abcd");
                 try {

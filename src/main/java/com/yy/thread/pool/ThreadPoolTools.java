@@ -1,5 +1,7 @@
 package com.yy.thread.pool;
 
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
+
 import java.util.concurrent.*;
 
 public class ThreadPoolTools {
@@ -19,9 +21,14 @@ public class ThreadPoolTools {
     public ThreadPoolExecutor executor;
 
     public ThreadPoolTools() {
+
+        ThreadFactory namedThreadFactory = new ThreadFactoryBuilder()
+                .setNameFormat("coupon-custom-create-thread-%d").build(); // guava
+
         this.executor = new ThreadPoolExecutor(minPoolSize, maxPoolSize, idleSeconds,
                 TimeUnit.SECONDS, /* 时间单位,秒 */
                 new ArrayBlockingQueue<Runnable>(queueBlockSize),
+                namedThreadFactory,
                 new ThreadPoolExecutor.CallerRunsPolicy()); /* 重试添加当前加入失败的任务 */
     }
 

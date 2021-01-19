@@ -8,10 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import javax.annotation.Resource;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.TimeUnit;
 
 
 @ContextConfiguration(locations="classpath:applicationContext.xml")
@@ -21,20 +24,28 @@ public class MainTest {
     @Autowired
     TestAnnotation testAnnotation;
 
+    @Resource(name = "customThreadPool")
+    private ExecutorService customThreadPool;
+
     @Test
-    public void test() throws NoSuchFieldException {
+    public void test() throws NoSuchFieldException, InterruptedException {
         // 👌
-        testAnnotation.hah777(null, 10);
+        for (int i = 0; i < 20; i++) {
+            customThreadPool.execute(MainTest::run);
+        }
+        customThreadPool.shutdown();
+        while (!customThreadPool.awaitTermination(1, TimeUnit.SECONDS)) {
+            System.out.println("线程还在执行。。。");
+        }
+        System.out.println("finished");
+    }
 
-        testAnnotation.resulttest777("123", 123999);
-
-        testAnnotation.hah777(null, 11);
-        testAnnotation.hah777("aasdaf", 12);
-
-        LogAspect.stat();
-
-        Class<Object> aClass = Object.class;
-        Field[] fields = aClass.getFields();
-        Method[] methods = aClass.getMethods();
+    private static void run() {
+        System.out.println("abcd");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
