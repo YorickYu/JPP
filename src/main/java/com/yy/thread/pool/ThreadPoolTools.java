@@ -23,7 +23,7 @@ public class ThreadPoolTools {
     public ThreadPoolTools() {
 
         ThreadFactory namedThreadFactory = new ThreadFactoryBuilder()
-                .setNameFormat("coupon-custom-create-thread-%d").build(); // guava
+                .setNameFormat("custom-create-thread-%d").build(); // guava
 
         this.executor = new ThreadPoolExecutor(minPoolSize, maxPoolSize, idleSeconds,
                 TimeUnit.SECONDS, /* 时间单位,秒 */

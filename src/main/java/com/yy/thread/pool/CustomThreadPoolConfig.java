@@ -17,7 +17,7 @@ public class CustomThreadPoolConfig {
     @Bean(value = "customThreadPool")
     public ExecutorService buildCustomThreadPool(){
         ThreadFactory namedThreadFactory = new ThreadFactoryBuilder()
-                .setNameFormat("coupon-custom-create-thread-%d").build(); // guava
+                .setNameFormat("custom-create-thread-%d").build(); // guava
 
         ExecutorService pool = new ThreadPoolExecutor(5, 10, 0L, TimeUnit.MILLISECONDS,
                 new ArrayBlockingQueue<Runnable>(5),namedThreadFactory,new ThreadPoolExecutor.AbortPolicy());
