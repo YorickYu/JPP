@@ -6,5 +6,7 @@ public class EnumTest {
         System.out.println("CoopEnum.SEASON.SPRING.getKey() = " + CoopEnum.SEASON.SPRING.getValue());
 
         System.out.println("CoopEnum.WEEK.MONDAY.getKey() = " + CoopEnum.WEEK.MONDAY.getKey());
+
+        CoopEnum.SingletonEnum.INSTANCE.run();
     }
 }
