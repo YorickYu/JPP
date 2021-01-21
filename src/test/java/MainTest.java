@@ -48,4 +48,29 @@ public class MainTest {
             e.printStackTrace();
         }
     }
+
+
+    /**
+     * 批量入库
+     * 需求：假如有10314条数据（非整数），每次入库节点是100条，在一次for循环中入库所有商品
+     */
+    @Test
+    public void testfor() {
+
+        int batch = 100; // 批量数
+        int total = 10014; // 总次数
+        int head = total/batch;
+        int times = 0;
+        for (int i = 1; i <= total; i++) {
+            int result = i - batch * times;
+            if (i % batch == 0) {
+                times++;
+                System.out.println(times +"次"); // insert list
+            }
+            if (i > head*batch) {
+                System.out.println(i);
+            }
+        }
+
+    }
 }
