@@ -148,4 +148,6 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ![interview](https://github.com/YorickYu/Java-abilities-summary/blob/main/images/xmind.png)
 
+#### Spring Bean 声明周期 & 循环依赖
 
+![Spring](https://github.com/YorickYu/Java-spring-summary/blob/main/images/Spring%20Bean.png)
