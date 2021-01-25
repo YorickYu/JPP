@@ -5,6 +5,7 @@ import org.checkerframework.checker.units.qual.A;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -26,6 +27,13 @@ public class MainTest {
 
     @Resource(name = "customThreadPool")
     private ExecutorService customThreadPool;
+
+    @Test
+    public void runningBean() {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        Object bean = context.getBean("");
+        System.out.println("bean = " + bean);
+    }
 
     @Test
     public void test() throws NoSuchFieldException, InterruptedException {
