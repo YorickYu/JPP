@@ -147,8 +147,10 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 最新更新：Redis相关
 
-![interview](https://github.com/YorickYu/Java-abilities-summary/blob/main/images/xmind.png)
+![interview](https://github.com/YorickYu/Java_Redis_summary/blob/main/images/redis-xmind.png)
 
 #### Spring Bean 声明周期 & 循环依赖
 
-![Spring](https://github.com/YorickYu/Java-spring-summary/blob/main/images/Spring%20Bean.png)
+更新2021-1-27：补充生命周期AOP处理 及 singletonFactories 说明
+
+![Spring](https://github.com/YorickYu/Java-spring-summary/blob/main/images/SpringBean.png)
