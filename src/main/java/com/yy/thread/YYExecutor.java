@@ -103,7 +103,7 @@ public class YYExecutor {
             }
         }, "T2");
         t1.start();
-        Thread.sleep(100);
+//        Thread.sleep(1000);
         t2.start();
     }
 
@@ -120,6 +120,7 @@ public class YYExecutor {
 
     private static void p2(Object lock) throws InterruptedException {
         synchronized (lock) {
+            Thread.sleep(1000);
             val++;
             System.out.println(Thread.currentThread().getName()+":"+val);
         }
