@@ -144,9 +144,9 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ![网络通信](https://github.com/YorickYu/Java_IO_summary/blob/main/images/IO.png)
 
-#### 常见面试知识点整理
+#### Redis
 
-最新更新：Redis相关
+最新更新：Redis分布式锁细节补充
 
 ![interview](https://github.com/YorickYu/Java_Redis_summary/blob/main/images/redis-xmind.png)
 

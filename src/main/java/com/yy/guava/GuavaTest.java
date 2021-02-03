@@ -7,6 +7,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 
 import java.util.*;
+import java.util.Optional;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
@@ -74,8 +75,8 @@ public class GuavaTest {
         });
 
         // 将list连接成string
-        String join1 = Joiner.on(";").skipNulls().join(split);
-        System.out.println("join1 = " + join1);
+        String join = Joiner.on(";").skipNulls().join(split);
+        System.out.println("join = " + join);
         // StringBuilder stringBuilder = joiner.appendTo(new StringBuilder(), "a", "b");
         // System.out.println("stringBuilder.toString() = " + stringBuilder.toString());
     }

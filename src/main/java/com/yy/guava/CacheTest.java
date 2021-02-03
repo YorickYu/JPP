@@ -15,7 +15,7 @@ public class CacheTest {
     private CacheLoader cacheLoader = new CacheLoader<String, String>() {
         // 如果找不到元素，会调用这里
         @Override
-        public String  load(String key) {
+        public String load(String key) {
             System.out.println("没有找到 = " + key);
             /**
              * 模拟：去数据库查询/远程调用

@@ -48,6 +48,5 @@ public class ArrayStream {
         random.ints().limit(3).sorted().forEach(System.out::println);
 
 
-
     }
 }
