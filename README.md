@@ -59,13 +59,15 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ### 消息队列
 
-
+- [RabbitMQ入门](https://yloopdaed.icu/2021/02/08/rabbitmq/)
 
 ### 缓存中间件
 
 
 
 ### 搜索引擎篇
+
+[Elasticsearch](https://github.com/YorickYu/JPP/tree/main/Elasticsearch) 文件目录中有一些分享
 
 
 ### 小工具
