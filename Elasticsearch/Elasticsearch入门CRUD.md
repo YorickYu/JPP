@@ -20,8 +20,6 @@
 
 `GET users/_doc/1`
 
-##### 
-
 
 
 #### Update一个文档

@@ -2,7 +2,6 @@ package com.yy.reference;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.ReferenceQueue;
-import java.nio.ByteBuffer;
 import java.util.LinkedList;
 import java.util.List;
 
