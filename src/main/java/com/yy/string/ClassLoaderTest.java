@@ -18,6 +18,6 @@ public class ClassLoaderTest {
     }
 }
 
-class String {
-    private int a;
-}
+//class String {
+//    private int a;
+//}

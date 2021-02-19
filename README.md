@@ -44,6 +44,11 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [对象存储和指针逃逸](https://yloopdaed.icu/2021/01/20/new-Object/)
 - [Java 你没见过的单例写法](https://yloopdaed.icu/2021/01/20/nsingleton/)
 
+### JVM 虚拟机
+
+- [JVM 类加载器 & 运行时区域](https://yloopdaed.icu/2021/02/09/java/)
+- [堆 & 垃圾回收机制](https://yloopdaed.icu/2021/02/11/jvm-gc/)
+
 ### 基本框架篇
 
 
@@ -63,7 +68,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ### 缓存中间件
 
-
+- [Redis](https://github.com/YorickYu/Java_Redis_summary)
 
 ### 搜索引擎篇
 

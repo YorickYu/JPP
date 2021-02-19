@@ -4,8 +4,8 @@ public class StringIntern {
 
     public static void main(String[] args) {
 
-        String s = "javazs";
-        System.out.println(s == s.intern()); // true
+//        String s = "javazs";
+//        System.out.println(s == s.intern()); // true
 
         StringBuilder builder = new StringBuilder("j").append("avazs");
         String s1 = builder.toString();
