@@ -53,11 +53,11 @@ public class YYExecutor {
 //        System.out.println("执行main方法线程名字：" + Thread.currentThread().getName());
 
         //4
-//        Object com.yy.lock = new Object();
+//        Object lock = new Object();
 //        Thread t1 = new Thread(() -> {
 //            for (int i = 0; i < 10; i++) {
 //                try {
-//                    p(com.yy.lock);
+//                    p(lock);
 //                } catch (InterruptedException e) {
 //                    e.printStackTrace();
 //                }
@@ -66,7 +66,7 @@ public class YYExecutor {
 //        Thread t2 = new Thread(() -> {
 //            for (int i = 0; i < 10; i++) {
 //                try {
-//                    p(com.yy.lock);
+//                    p(lock);
 //                } catch (InterruptedException e) {
 //                    e.printStackTrace();
 //                }
