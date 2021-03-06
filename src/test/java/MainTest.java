@@ -90,4 +90,20 @@ public class MainTest {
         linkedList.push(2);
         linkedList.add(1, 3);
     }
+
+    @Test
+    public void testRetry() {
+        int i = 0;
+        retry:
+        for (;;) {
+            i ++;
+            if (i == 20) {
+                System.out.println("break");
+                break retry;
+            } else {
+                System.out.println("continue");
+                continue retry;
+            }
+        }
+    }
 }
