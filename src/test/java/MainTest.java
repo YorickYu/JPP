@@ -12,9 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.annotation.Resource;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
@@ -28,6 +26,7 @@ public class MainTest {
 
     @Resource(name = "customThreadPool")
     private ExecutorService customThreadPool;
+
 
     @Test
     public void runningBean() {
@@ -65,7 +64,6 @@ public class MainTest {
      */
     @Test
     public void testfor() {
-
         int batch = 100; // 批量数
         int total = 10014; // 总次数
         int head = total/batch;
@@ -105,5 +103,16 @@ public class MainTest {
                 continue retry;
             }
         }
+    }
+
+
+    private void testSourceCode() {
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        linkedHashMap.put("abc", 123);
+        String s = new String("123");
+        s.length();
+        ArrayList<String> list = new ArrayList<>();
+        list.size();
+
     }
 }
