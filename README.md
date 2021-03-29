@@ -71,6 +71,10 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 - [Redis](https://github.com/YorickYu/Java_Redis_summary)
 
+### 数据库
+
+- [MySQL Innodb 自定义Hash索引](https://yloopdaed.icu/2021/03/29/mysql-innodb-hash/)
+
 ### 搜索引擎篇
 
 [Elasticsearch](https://github.com/YorickYu/JPP/tree/main/Elasticsearch) 文件目录中有一些分享
