@@ -34,6 +34,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ### J2SE基础
 
+- [面试官：Java8到底有什么新特性？](https://yloopdaed.icu/2021/04/20/diff-of-java8/)
 - [自动装箱和拆箱的发生场景](https://yloopdaed.icu/2020/12/12/java-boxing-unboxing/)
 - [反证CPU乱序执行](http://yloopdaed.icu/2020/10/19/CPU-Out-of-Order/)
 - [Java对象的内存布局](http://yloopdaed.icu/2020/10/29/memory-layout-of-java-object/)
