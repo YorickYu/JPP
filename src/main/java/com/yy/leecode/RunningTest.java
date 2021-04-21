@@ -2,6 +2,7 @@ package com.yy.leecode;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 public class RunningTest {
 
@@ -14,7 +15,7 @@ public class RunningTest {
 
 
     public static void main(String[] args) {
-        ArrayList arrayList = new ArrayList();
+        List arrayList = new ArrayList();
         arrayList.add("1");
         arrayList.add("2");
         arrayList.add("3");
@@ -32,7 +33,6 @@ public class RunningTest {
         new Thread(RunningTest::print).start();
         new Thread(new RunningTest()::printn).start();
 
-//        Comparator.comparing()
     }
 
 }

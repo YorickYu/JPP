@@ -25,17 +25,16 @@ public class YYExecutor {
     }
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-//        // 1
-////        Thread myThread = new MyThread1();
-////        myThread.start();
-////        Thread thread = new Thread();
-////
-////        // 2
-////        ThreadLocal<Integer> threadLocal = new ThreadLocal();
-////        threadLocal.set(11);
-////        Integer integer = threadLocal.get();
-////        CompletableFuture.runAsync(() -> {
-////        });
+          // 1
+//        Thread myThread = new MyThread1();
+//        myThread.start();
+//        Thread thread = new Thread();
+//
+//        // 2
+//        ThreadLocal<Integer> threadLocal = new ThreadLocal();
+//        threadLocal.set(11);
+//        Integer integer = threadLocal.get();
+
 
         // 3
 //        for (int i = 0; i < 10; i++) {
@@ -105,6 +104,7 @@ public class YYExecutor {
         t1.start();
 //        Thread.sleep(1000);
         t2.start();
+
     }
 
 

@@ -14,8 +14,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 
 @ContextConfiguration(locations="classpath:applicationContext.xml")
@@ -79,6 +78,22 @@ public class MainTest {
                 System.out.println(i);
             }
         }
+
+
+    }
+
+    @Test
+    public void testThread() throws ExecutionException, InterruptedException {
+        CompletableFuture.runAsync(() -> {
+        });
+
+        FutureTask futureTask = new FutureTask<String>(() -> {
+            System.out.println(Thread.currentThread().getName()); // Thread-1
+            return "12312312";
+        });
+        Thread t = new Thread(futureTask);
+        t.start();
+        System.out.println("futureTask.get() = " + futureTask.get());
 
     }
 }

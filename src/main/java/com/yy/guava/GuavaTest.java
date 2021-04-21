@@ -111,10 +111,6 @@ public class GuavaTest {
         // 狼已经自动过去，获取为 null 值报错
         System.out.println(loadingCache.get("狼"));
 
-
-        for (int i = 0; i < 20; i++) {
-            System.out.println(i);
-        }
     }
 
 
