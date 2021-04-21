@@ -1,7 +1,4 @@
-import com.yy.annotation.LogAspect;
 import com.yy.annotation.TestAnnotation;
-import com.yy.snowflake.SFIdGenerator;
-import org.checkerframework.checker.units.qual.A;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,11 +7,12 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.HashSet;
+
 import java.util.concurrent.*;
+
+import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.TimeUnit;
 
 
 @ContextConfiguration(locations="classpath:applicationContext.xml")
@@ -26,6 +24,7 @@ public class MainTest {
 
     @Resource(name = "customThreadPool")
     private ExecutorService customThreadPool;
+
 
     @Test
     public void runningBean() {
@@ -63,7 +62,6 @@ public class MainTest {
      */
     @Test
     public void testfor() {
-
         int batch = 100; // 批量数
         int total = 10014; // 总次数
         int head = total/batch;
@@ -94,6 +92,41 @@ public class MainTest {
         Thread t = new Thread(futureTask);
         t.start();
         System.out.println("futureTask.get() = " + futureTask.get());
+
+    }
+
+    @Test
+    public void testLinkedList() {
+        LinkedList<Object> linkedList = new LinkedList<>();
+        linkedList.add(1);
+        linkedList.push(2);
+        linkedList.add(1, 3);
+    }
+
+    @Test
+    public void testRetry() {
+        int i = 0;
+        retry:
+        for (;;) {
+            i ++;
+            if (i == 20) {
+                System.out.println("break");
+                break retry;
+            } else {
+                System.out.println("continue");
+                continue retry;
+            }
+        }
+    }
+
+
+    private void testSourceCode() {
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        linkedHashMap.put("abc", 123);
+        String s = new String("123");
+        s.length();
+        ArrayList<String> list = new ArrayList<>();
+        list.size();
 
     }
 }
