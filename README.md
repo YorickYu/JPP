@@ -34,6 +34,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ### J2SE基础
 
+- [Stream 底层实现](https://yloopdaed.icu/2021/04/23/inner-stream/)
 - [Stream生成斐波那契数列（无限流）](https://yloopdaed.icu/2021/04/22/Fibonacci/)
 - [面试官：Java8到底有什么新特性？](https://yloopdaed.icu/2021/04/20/diff-of-java8/)
 - [自动装箱和拆箱的发生场景](https://yloopdaed.icu/2020/12/12/java-boxing-unboxing/)
