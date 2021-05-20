@@ -5,6 +5,7 @@ import cn.hutool.core.lang.Assert;
 import com.google.common.collect.Maps;
 import lombok.Data;
 import lombok.experimental.Accessors;
+import org.apache.commons.collections4.MapUtils;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -45,6 +46,20 @@ public class ListToMap {
         return Maps.uniqueIndex(list, Animal::getId);
     }
 
+    // MapUtils
+    public static Map<Integer, Animal> convertListWithApacheCommons2(List<Animal> list) {
+        Map<Integer, Animal> map = new HashMap<>();
+        MapUtils.populateMap(map, list, Animal::getId);
+        return map;
+    }
+
+    // MapUtils 处理key冲突 - IllegalStateException
+    public static Map<Integer, Animal> convertListWithApacheCommons2_conflict(List<Animal> list) {
+        Map<Integer, Animal> map = new HashMap<>();
+        MapUtils.populateMap(map, list, Animal::getId, animal -> animal);
+        return map;
+    }
+
     public static void main(String[] args) {
         Animal pig = new Animal().setName("pig").setId(1);
         Animal dog = new Animal().setName("dog").setId(2);
@@ -54,7 +69,13 @@ public class ListToMap {
         Map<Integer, Animal> map1 = convertListBeforeJava8(list);
         Map<Integer, Animal> map2 = convertListAfterJava8(list);
         Map<Integer, Animal> map3 = convertListWithGuava(list);
-        Map<Integer, Animal> map4 = convertListAfterJava8_conflict(list);
+        Map<Integer, Animal> map4 = convertListWithApacheCommons2(list);
+
+        Animal wolf = new Animal().setName("wolf").setId(3);
+        List<Animal> list2 = Arrays.asList(pig, dog, cat, wolf);
+
+        Map<Integer, Animal> map5 = convertListAfterJava8_conflict(list2);
+        Map<Integer, Animal> map6 = convertListWithApacheCommons2_conflict(list2);
 
     }
 }
