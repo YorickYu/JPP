@@ -61,7 +61,6 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [Spring:快速上手Spring](https://lan.yitian.online/blog/?p=88)
 - [Spring Bean1：反射](https://yloopdaed.icu/2020/12/30/whatis-reflection-in-java/)
 - [Spring Bean2：启动流程图解](https://yloopdaed.icu/2020/12/31/spring-bean-and-c-d/)
-
 - [Spring三级缓存：singletonFactories作用](https://yloopdaed.icu/2021/01/27/spring-cache-singletonfactories/)
 
 ### 消息队列
