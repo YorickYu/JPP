@@ -90,14 +90,18 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [最大化满足你需求的日志系统](https://github.com/YorickYu/simple_log_project)
 - [snowflake 雪花算法封装](https://yloopdaed.icu/2021/01/04/snowflake-config/)
 - [Guava 实用篇（持续更新）](https://yloopdaed.icu/2021/02/01/guava-usable/)
+- [拼接数组](https://yloopdaed.icu/2021/04/26/array-merge/)
+- [list to map](https://yloopdaed.icu/2021/05/21/list-to-map/)
 
 
 ### 大数据篇
 
 
 
-### 微服务、RPC
+### 微服务、架构思维
 
+- [微服务拆分和搭建](https://yloopdaed.icu/2021/05/09/microservices/)
+- [服务重构流程](https://yloopdaed.icu/2021/05/25/refactor-service/)
 
 
 ### 网关
