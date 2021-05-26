@@ -24,7 +24,6 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 ### 计算机基础篇
 
 - [BIO/NIO/多路复用 原理与区别](http://yloopdaed.icu/2020/11/11/about-IO/)
-
 - [和挖矿程序拼到底！](http://yloopdaed.icu/2020/11/11/centos-attack/)
 
 ### 常用工具篇
@@ -60,7 +59,6 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 - [Spring:概述及IOC理论推导](https://lan.yitian.online/blog/?p=86)
 - [Spring:快速上手Spring](https://lan.yitian.online/blog/?p=88)
-
 - [Spring Bean1：反射](https://yloopdaed.icu/2020/12/30/whatis-reflection-in-java/)
 - [Spring Bean2：启动流程图解](https://yloopdaed.icu/2020/12/31/spring-bean-and-c-d/)
 
@@ -102,7 +100,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 - [微服务拆分和搭建](https://yloopdaed.icu/2021/05/09/microservices/)
 - [服务重构流程](https://yloopdaed.icu/2021/05/25/refactor-service/)
-
+- [serverless、FaaS/BaaS、laaS/PaaS/SaaS](https://yloopdaed.icu/2021/05/26/what-is-serverless/)
 
 ### 网关
 
