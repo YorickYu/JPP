@@ -1,7 +1,5 @@
 package com.yy.collection;
 
-
-import cn.hutool.core.lang.Assert;
 import com.google.common.collect.Maps;
 import lombok.Data;
 import lombok.experimental.Accessors;
