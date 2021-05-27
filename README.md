@@ -154,22 +154,22 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 最新更新：修正HashMap1.8中变树阈值部分泊松分布的概率分布图
 
-![HashMap](https://github.com/YorickYu/Java_HashMap_summary/blob/main/images/HashMap_xmind2.0.png)
+[HashMap](https://github.com/YorickYu/Java_HashMap_summary/blob/main/images/HashMap_xmind2.0.png)
 
 #### 网络通信
 
 操作系统层面
 
-![网络通信](https://github.com/YorickYu/Java_IO_summary/blob/main/images/IO.png)
+[网络通信](https://github.com/YorickYu/Java_IO_summary/blob/main/images/IO.png)
 
 #### Redis
 
 最新更新：Redis分布式锁细节补充
 
-![interview](https://github.com/YorickYu/Java_Redis_summary/blob/main/images/redis-xmind.png)
+[redis](https://github.com/YorickYu/Java_Redis_summary/blob/main/images/redis-xmind.png)
 
 #### Spring Bean 声明周期 & 循环依赖
 
 更新2021-1-27：补充生命周期AOP处理 及 singletonFactories 说明
 
-![Spring](https://github.com/YorickYu/Java-spring-summary/blob/main/images/SpringBean.png)
+[Spring](https://github.com/YorickYu/Java-spring-summary/blob/main/images/SpringBean.png)
