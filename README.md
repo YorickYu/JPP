@@ -24,7 +24,6 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 ### 计算机基础篇
 
 - [BIO/NIO/多路复用 原理与区别](http://yloopdaed.icu/2020/11/11/about-IO/)
-
 - [和挖矿程序拼到底！](http://yloopdaed.icu/2020/11/11/centos-attack/)
 
 ### 常用工具篇
@@ -60,10 +59,8 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 - [Spring:概述及IOC理论推导](https://lan.yitian.online/blog/?p=86)
 - [Spring:快速上手Spring](https://lan.yitian.online/blog/?p=88)
-
 - [Spring Bean1：反射](https://yloopdaed.icu/2020/12/30/whatis-reflection-in-java/)
 - [Spring Bean2：启动流程图解](https://yloopdaed.icu/2020/12/31/spring-bean-and-c-d/)
-
 - [Spring三级缓存：singletonFactories作用](https://yloopdaed.icu/2021/01/27/spring-cache-singletonfactories/)
 
 ### 消息队列
@@ -90,15 +87,19 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [最大化满足你需求的日志系统](https://github.com/YorickYu/simple_log_project)
 - [snowflake 雪花算法封装](https://yloopdaed.icu/2021/01/04/snowflake-config/)
 - [Guava 实用篇（持续更新）](https://yloopdaed.icu/2021/02/01/guava-usable/)
+- [拼接数组](https://yloopdaed.icu/2021/04/26/array-merge/)
+- [list to map](https://yloopdaed.icu/2021/05/21/list-to-map/)
 
 
 ### 大数据篇
 
 
 
-### 微服务、RPC
+### 微服务、架构思维
 
-
+- [微服务拆分和搭建](https://yloopdaed.icu/2021/05/09/microservices/)
+- [服务重构流程](https://yloopdaed.icu/2021/05/25/refactor-service/)
+- [serverless、FaaS/BaaS、laaS/PaaS/SaaS](https://yloopdaed.icu/2021/05/26/what-is-serverless/)
 
 ### 网关
 
@@ -153,22 +154,22 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 最新更新：修正HashMap1.8中变树阈值部分泊松分布的概率分布图
 
-![HashMap](https://github.com/YorickYu/Java_HashMap_summary/blob/main/images/HashMap_xmind2.0.png)
+[HashMap](https://github.com/YorickYu/Java_HashMap_summary/blob/main/images/HashMap_xmind2.0.png)
 
 #### 网络通信
 
 操作系统层面
 
-![网络通信](https://github.com/YorickYu/Java_IO_summary/blob/main/images/IO.png)
+[网络通信](https://github.com/YorickYu/Java_IO_summary/blob/main/images/IO.png)
 
 #### Redis
 
 最新更新：Redis分布式锁细节补充
 
-![interview](https://github.com/YorickYu/Java_Redis_summary/blob/main/images/redis-xmind.png)
+[redis](https://github.com/YorickYu/Java_Redis_summary/blob/main/images/redis-xmind.png)
 
 #### Spring Bean 声明周期 & 循环依赖
 
 更新2021-1-27：补充生命周期AOP处理 及 singletonFactories 说明
 
-![Spring](https://github.com/YorickYu/Java-spring-summary/blob/main/images/SpringBean.png)
+[Spring](https://github.com/YorickYu/Java-spring-summary/blob/main/images/SpringBean.png)
