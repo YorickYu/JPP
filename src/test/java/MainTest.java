@@ -1,4 +1,6 @@
 import com.yy.annotation.TestAnnotation;
+import com.yy.async.AsyncTestService;
+import lombok.SneakyThrows;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +10,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
 
+import java.time.Duration;
+import java.time.LocalTime;
 import java.util.concurrent.*;
 
 import java.util.*;
@@ -61,7 +65,7 @@ public class MainTest {
      * 需求：假如有10314条数据（非整数），每次入库节点是100条，在一次for循环中入库所有商品
      */
     @Test
-    public void testfor() {
+    public void testFor() {
         int batch = 100; // 批量数
         int total = 10014; // 总次数
         int head = total/batch;
@@ -119,14 +123,46 @@ public class MainTest {
         }
     }
 
+    @Resource
+    private AsyncTestService asyncTestService;
 
-    private void testSourceCode() {
-        LinkedHashMap linkedHashMap = new LinkedHashMap();
-        linkedHashMap.put("abc", 123);
-        String s = new String("123");
-        s.length();
-        ArrayList<String> list = new ArrayList<>();
-        list.size();
+    @Test
+    @SneakyThrows
+    public void testAsync() {
 
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+        CompletableFuture<Integer>[] completableFutureArray = new CompletableFuture[list.size()];
+        LocalTime startTime = LocalTime.now();
+        for (Integer integer : list) {
+            if (integer == 5) {
+                continue;
+            }
+            CompletableFuture<Integer> integerCompletableFuture = asyncTestService.testFutureTask(integer);
+            completableFutureArray[list.indexOf(integer)] = integerCompletableFuture;
+        }
+
+        CompletableFuture<Integer>[] futures = removeArrayEmptyElement(completableFutureArray);
+        CompletableFuture.allOf(futures).join();
+        LocalTime endTime = LocalTime.now();
+        Duration between = Duration.between(startTime, endTime);
+        System.out.println("测试耗时：" + between.toMillis());
+        for (CompletableFuture<Integer> future : futures) {
+            Integer integer = future.get();
+            arrayList.add(integer);
+        }
+    }
+
+
+    private CompletableFuture<Integer>[] removeArrayEmptyElement(CompletableFuture<Integer>[] arr) {
+        List<CompletableFuture<Integer>> list = Arrays.asList(arr);
+        List<CompletableFuture<Integer>> listNew = new ArrayList<>();
+        for (int i = 0; i <list.size(); i++) {
+            if (list.get(i)!=null){
+                listNew.add(list.get(i));
+            }
+        }
+        CompletableFuture<Integer>[] arrayNew = listNew.toArray(new CompletableFuture[listNew.size()]);
+        return arrayNew;
     }
 }
