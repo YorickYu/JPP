@@ -9,14 +9,13 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
-
 import java.time.Duration;
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.concurrent.*;
-
-import java.util.*;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.TimeUnit;
 
 
 @ContextConfiguration(locations="classpath:applicationContext.xml")
@@ -138,7 +137,7 @@ public class MainTest {
             if (integer == 5) {
                 continue;
             }
-            CompletableFuture<Integer> integerCompletableFuture = asyncTestService.testFutureTask(integer);
+            CompletableFuture<Integer> integerCompletableFuture = asyncTestService.testForLoopFutureTask(integer);
             completableFutureArray[list.indexOf(integer)] = integerCompletableFuture;
         }
 
