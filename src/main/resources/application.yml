@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: "jpp-service"
+server:
+  port: 18888
+  servlet:
+    context-path: "/jpp-service"

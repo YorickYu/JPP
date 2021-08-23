@@ -13,7 +13,6 @@ public class AsyncInnerTestService {
     @Async("customThreadPool")
     public CompletableFuture<Integer> testFutureTask(Integer idx) {
         Thread.sleep(1000);
-
         return CompletableFuture.completedFuture(idx);
     }
 }
