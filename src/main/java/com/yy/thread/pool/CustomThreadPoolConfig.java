@@ -21,6 +21,7 @@ public class CustomThreadPoolConfig {
 
         ExecutorService pool = new ThreadPoolExecutor(5, 10, 0L, TimeUnit.MILLISECONDS,
                 new ArrayBlockingQueue<Runnable>(50),namedThreadFactory,new ThreadPoolExecutor.AbortPolicy());
+
         return pool;
     }
 
