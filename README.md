@@ -20,6 +20,17 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ---
 
+### SOP
+
+- [微服务拆分和搭建 SOP](https://yloopdaed.icu/2021/05/09/microservices/)
+- [服务重构 SOP](https://yloopdaed.icu/2021/05/25/refactor-service/)
+- [A/B/nTest搭建 SOP](https://yloopdaed.icu/2021/06/26/abtest/)
+- [数据迁移 SOP（不停机、分片）](https://yloopdaed.icu/2021/07/06/migrate-data/)
+- [数据清洗 SOP](https://yloopdaed.icu/2021/07/08/cover-data/)
+
+
+### 解决方案
+
 
 ### 计算机基础篇
 
