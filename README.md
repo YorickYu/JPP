@@ -130,7 +130,7 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 - [尝试阅读AQS源码（countdownlatch await）](https://yloopdaed.icu/2020/11/30/AQS-countdownlatch/)
 - [尝试阅读ThreadLocal源码-基础部分](https://yloopdaed.icu/2020/12/10/threadlocal/)
 - [尝试阅读ThreadLocal源码-Hash冲突、启动/探测式清理、扩容](https://yloopdaed.icu/2020/12/13/threadlocal2/) 
-
+- [ThreadLocal应用-feignClient异步调用时header传递问题](https://yloopdaed.icu/2021/08/26/feign-client-async/)
 - [一个线程池封装背后](https://yloopdaed.icu/2021/01/19/custom-thread-pool/#more)
 
 ### 容器篇
