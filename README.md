@@ -31,6 +31,8 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 
 ### 解决方案
 
+-[秒杀服务设计（无超卖）](https://yloopdaed.icu/2021/09/02/seckill/)
+
 
 ### 计算机基础篇
 
@@ -115,6 +117,10 @@ JPP - Java Promotion Process 是一个Java能力提升的计划，与君共勉
 ### 网关
 
 - [我的tomcat为什么启不起来？](https://yloopdaed.icu/2020/12/09/how-to-checkout-running-port/)
+- [DNS 轮询](https://yloopdaed.icu/2021/09/06/dns-poll/)
+- [HttpClient vs. OkHttp](https://yloopdaed.icu/2021/08/27/http-ok-client/)
+- [feignClient异步调用时header传递问题](https://yloopdaed.icu/2021/08/26/feign-client-async/)
+- [HttpServletRequest get body json](https://yloopdaed.icu/2021/09/18/HttpServletRequest-get-body-json/)
 
 ### 并发编程
 
