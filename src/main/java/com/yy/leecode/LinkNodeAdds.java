@@ -1,5 +1,6 @@
 package com.yy.leecode;
 
+import java.util.ArrayList;
 import java.util.List;
 
 // 同包下可用
@@ -81,6 +82,12 @@ public class LinkNodeAdds {
 
         ListNode target = addTwoNumbers(l1, l2);
         System.out.println(ListNode.nodePrint(target));
+
+        List<String> finalRecipeIds = new ArrayList<>();
+        finalRecipeIds.add("123");
+        List<String> strings = finalRecipeIds.subList(0, 20);
+        System.out.println(strings);
+
     }
 
 

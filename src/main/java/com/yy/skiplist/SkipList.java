@@ -1,6 +1,8 @@
 package com.yy.skiplist;
 
 
+import java.util.ArrayList;
+
 /**
  * 跳表的一种实现方法。
  * 跳表中存储的是正整数，并且存储的是不重复的。
@@ -125,6 +127,12 @@ public class SkipList {
 
             return builder.toString();
         }
+    }
+
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        boolean add = list.add(null);
+
     }
 
 }

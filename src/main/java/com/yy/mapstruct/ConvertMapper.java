@@ -7,9 +7,11 @@ import com.yy.mapstruct.demo.PersonVO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
+import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;
 
-@Mapper(componentModel = "default")
+
+@Mapper(componentModel = "default", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface ConvertMapper {
 
     ConvertMapper INSTANCE = Mappers.getMapper(ConvertMapper.class);
