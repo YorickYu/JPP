@@ -31,6 +31,7 @@ public class ParamFilter implements Filter {
 
             // todo ...
 
+
             HttpServletResponse response = (HttpServletResponse) servletResponse;
             responseWrapper = new ContentCachingResponseWrapper(response);
             filterChain.doFilter(cachedBodyHttpServletRequest, responseWrapper);

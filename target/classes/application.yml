@@ -1,6 +1,9 @@
 spring:
   application:
     name: "jpp-service"
+  redis:
+    redisson:
+      file: classpath:redisson.yml
 server:
   port: 18888
   servlet:
