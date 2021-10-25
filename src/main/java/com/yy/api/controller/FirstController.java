@@ -7,17 +7,34 @@ import com.yy.mapstruct.demo.CatDTO;
 import com.yy.mapstruct.demo.CatVO;
 import com.yy.mapstruct.demo.PersonDTO;
 import com.yy.mapstruct.demo.PersonVO;
+import org.redisson.Redisson;
+import org.redisson.api.RBloomFilter;
+import org.redisson.api.RedissonClient;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.Arrays;
 
 @RestController
 @RequestMapping(path = "/api/first")
 public class FirstController {
 
+    @Resource
+    private RedissonClient redissonClient;
+    @Resource
+    private Redisson redisson;
+
+    @GetMapping("/redisson")
+    public String redisson() {
+
+        RBloomFilter<Object> bloom = redisson.getBloomFilter("bloom");
+        bloom.tryInit(500000L,0.03);
+
+        return "";
+    }
 
     @GetMapping("/hello")
     public String first() {
