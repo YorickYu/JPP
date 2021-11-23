@@ -2,7 +2,7 @@ package com.yy.command;
 
 /**
  * @className: CommandTest
- * @description: TODO 类描述
+ * @description:
  * @author: yloopdaed
  * @date: 2021/11/23
  **/

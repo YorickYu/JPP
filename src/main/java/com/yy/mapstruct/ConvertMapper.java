@@ -11,7 +11,7 @@ import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;
 
 
-@Mapper(componentModel = "default", unmappedTargetPolicy = ReportingPolicy.IGNORE)
+//@Mapper(componentModel = "default", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface ConvertMapper {
 
     ConvertMapper INSTANCE = Mappers.getMapper(ConvertMapper.class);
