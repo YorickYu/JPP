@@ -1,6 +1,5 @@
 package com.yy.async;
 
-import cn.hutool.core.bean.BeanUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.yy.utils.CommonParamUtil;
 import feign.RequestInterceptor;
