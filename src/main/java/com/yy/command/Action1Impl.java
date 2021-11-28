@@ -8,8 +8,16 @@ package com.yy.command;
  **/
 public class Action1Impl implements Action {
 
+    private final Executor executor;
+
+    public Action1Impl(Executor executor) {
+        this.executor = executor;
+    }
+
+
     @Override
     public void perform() {
+        executor.func1();
         System.out.println("Action1Impl");
     }
 

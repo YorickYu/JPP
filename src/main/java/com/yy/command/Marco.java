@@ -20,6 +20,10 @@ public class Marco {
         actions.add(action);
     }
 
+    public void cancel(Action action) {
+        actions.remove(action);
+    }
+
     public void go() {
         actions.forEach(Action::perform);
     }

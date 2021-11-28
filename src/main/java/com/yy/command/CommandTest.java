@@ -9,9 +9,10 @@ package com.yy.command;
 public class CommandTest {
     public static void main(String[] args) {
         Marco marco = new Marco();
-        marco.record(new Action1Impl());
-        marco.record(new Action2Impl());
-        marco.record(new Action3Impl());
+        ExecutorImpl executor = new ExecutorImpl();
+        marco.record(new Action1Impl(executor));
+        marco.record(new Action2Impl(executor));
+        marco.record(new Action3Impl(executor));
         marco.go();
     }
 }
