@@ -1,5 +1,7 @@
 package com.yy.notification;
 
+import javax.annotation.Resource;
+
 /**
  * @className: PublishTest
  * @description:
@@ -7,6 +9,7 @@ package com.yy.notification;
  * @date: 2021/11/23
  **/
 public class PublishTest {
+
     public static void main(String[] args) {
         Publisher<String> publisher = new Publisher<>();
         publisher.record(msg -> {
