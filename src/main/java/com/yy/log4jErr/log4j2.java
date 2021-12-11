@@ -1,4 +1,4 @@
-package com.yy;
+package com.yy.log4jErr;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
