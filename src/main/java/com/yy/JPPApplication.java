@@ -9,3 +9,4 @@ public class JPPApplication {
         SpringApplication.run(JPPApplication.class, args);
     }
 }
+
