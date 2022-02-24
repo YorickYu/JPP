@@ -11,11 +11,11 @@ import java.util.regex.Pattern;
  **/
 public class pattern {
     public static void main(String[] args) {
-        String content = "\n" +
-                "    *(%#$*kskkd多看看3828\uD83D\uDE012*￥（*……%12\n" +
-                "阿三发射点发\n" +
-                "阿三发射点        阿斯蒂芬撒地方\n" +
-                "\n";
+//        String content = "\n" +
+//                "    *(%#$*kskkd多看看3828\uD83D\uDE012*￥（*……%12\n" +
+//                "阿三发射点发\n" +
+//                "阿三发射点        阿斯蒂芬撒地方\n" +
+//                "\n";
 
         // ^[\u4e00-\u9fa5] 汉字
         // ^[`~!@#$%^&*()_\-+=<>?:"{}|,.\/;'\\[\]·~！@#￥%……&*（）——\-+={}|《》？：“”【】、；‘'，。、](.*?)\\d$
@@ -23,7 +23,8 @@ public class pattern {
 
         // \\s*|\t|\r|\n \s{1,2}
 
-        String line = filterLine(content);
+        String line = filterLine("\n！" +
+                "content123     231");
         String space = formatSpace(line);
         String symbolStart = formatSymbolStart(space);
 
@@ -34,20 +35,23 @@ public class pattern {
     public static String filterLine(String content) {
         Pattern p = Pattern.compile("\r|\n");
         Matcher m = p.matcher(content);
+        boolean b = m.find();
         return m.replaceAll("");
     }
 
     // 过滤 （连续）空格
     public static String formatSpace(String content) {
-        Pattern p = Pattern.compile("\\s{1,9}");
+        Pattern p = Pattern.compile("\\s{2,}");
         Matcher m = p.matcher(content);
-        return m.replaceAll("");
+        boolean b = m.find();
+        return m.replaceAll(" ");
     }
 
     // 过滤 开头特殊符号
     public static String formatSymbolStart(String content) {
         Pattern p = Pattern.compile("^[`~!@#$%^&*()_\\-+=<>?:\"{}|,.\\/;'·~！@#￥%……&*（）+={}|《》？：“”【】、；‘'，。、]+");
         Matcher m = p.matcher(content);
+        boolean b = m.find();
         return m.replaceAll("");
     }
 }
