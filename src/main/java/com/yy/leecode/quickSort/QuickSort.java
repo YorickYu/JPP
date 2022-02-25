@@ -26,6 +26,7 @@ public class QuickSort {
                 arr[high --] =  arr[low];//low又成了坑
         }
 
+
         arr[low] = key;//将key填到这个坑
         return low;
     }
@@ -37,6 +38,51 @@ public class QuickSort {
             quick_sort(num, low, pos-1);
             quick_sort(num, pos+1, high);
         }
+    }
+
+    //////
+    public void sort(int[] nums) {
+        quickSort(nums, 0, nums.length - 1);
+    }
+
+    public void quickSort(int[] nums, int lo, int hi) {
+        if (lo >= hi) {
+            return;
+        }
+        int i = partitionSwap(nums, lo, hi);
+        quickSort(nums, lo, i - 1);
+        quickSort(nums, i + 1, hi);
+    }
+
+    public int partitionSwap(int[] nums, int lo, int hi) {
+        int left = lo + 1;
+        int right = hi;
+        int pivot = nums[lo];
+
+        while (left <= right) {
+            // 左指针要么越界要么指向下一个 >= pivot 的位置
+            while (left <= hi && nums[left] < pivot) {
+                left++;
+            }
+            // 如果右侧所有值都 >= pivot right=lo
+            while (right > lo && nums[right] >= pivot) {
+                right--;
+            }
+            // 防止左指针越界
+            if (left < right) {
+                swap(nums, left, right);
+            }
+        }
+
+        swap(nums, lo, right);
+
+        return right;
+    }
+
+    public void swap(int[] nums, int a, int b) {
+        int tmp = nums[a];
+        nums[a] = nums[b];
+        nums[b] = tmp;
     }
 
     public static void main(String[] args) {
