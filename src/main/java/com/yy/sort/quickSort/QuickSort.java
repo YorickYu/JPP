@@ -1,4 +1,4 @@
-package com.yy.leecode.quickSort;
+package com.yy.sort.quickSort;
 
 /**
  * @className: QuickSort
@@ -40,7 +40,7 @@ public class QuickSort {
         }
     }
 
-    //////
+    ////// new
     public void sort(int[] nums) {
         quickSort(nums, 0, nums.length - 1);
     }
@@ -84,6 +84,8 @@ public class QuickSort {
         nums[a] = nums[b];
         nums[b] = tmp;
     }
+
+    /////// end
 
     public static void main(String[] args) {
         int[] arr = {6,1,2,7,9,3,4,5,10,8};
