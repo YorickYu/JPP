@@ -30,7 +30,7 @@ public class PriorityQueueTest {
         PriorityQueue<Student> q = new PriorityQueue<Student>(new Comparator<Student>() {
             public int compare(Student o1, Student o2) {
                 //按照分数低到高，分数相等按名字
-                if(o1.getScore() == o2.getScore()){
+                if (o1.getScore() == o2.getScore()) {
                     return o1.getName().compareTo(o2.getName());
                 }
                 return o1.getScore() - o2.getScore();

@@ -8,21 +8,21 @@ package com.yy.sort.bubbleSort;
  **/
 public class BubbleSort {
 
-    static void bublleSort(int []arr) {
+    static void bublleSort(int[] arr) {
         int length = arr.length;
-        for(int i = 0; i < length - 1; i++) { //趟数
-            for(int j = 0; j < length - i - 1; j++) { //比较次数
-                if(arr[j] > arr[j+1]) { // 升序
+        for (int i = 0; i < length - 1; i++) { //趟数
+            for (int j = 0; j < length - i - 1; j++) { //比较次数
+                if (arr[j] > arr[j + 1]) { // 升序
                     int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
         }
     }
 
     public static void main(String[] args) {
-        int[] arr = {6,1,2,7,9,3,4,5,10,8};
+        int[] arr = {6, 1, 2, 7, 9, 3, 4, 5, 10, 8};
         BubbleSort.bublleSort(arr);
     }
 }
