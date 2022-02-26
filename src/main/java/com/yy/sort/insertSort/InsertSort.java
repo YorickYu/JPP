@@ -11,7 +11,7 @@ public class InsertSort {
         int i,temp,p;
         //从第２个元素开始
         for (i = 1; i<a.length; i++){
-            temp = a[i];//将待插入元素拿出来
+            temp = a[i]; //将第二个元素取出来（待插入元素）
             p = i-1;
             while (p>=0 && temp<a[p]){
                 // 比较大的元素向后挪一位，腾出空间
