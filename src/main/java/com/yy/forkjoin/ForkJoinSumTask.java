@@ -26,10 +26,12 @@ public class ForkJoinSumTask extends RecursiveTask<Long> {
         }
         ForkJoinSumTask leftTask =
                 new ForkJoinSumTask(numbers, start, start + length/2);
-        leftTask.fork();
+
         ForkJoinSumTask rightTask =
                 new ForkJoinSumTask(numbers, start + length/2, end);
-        Long rightResult = rightTask.compute();
+        leftTask.fork();
+        rightTask.fork();
+        Long rightResult = rightTask.join();
         Long leftResult = leftTask.join();
         return leftResult + rightResult;
     }

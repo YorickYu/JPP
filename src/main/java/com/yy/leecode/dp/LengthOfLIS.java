@@ -24,7 +24,7 @@ public class LengthOfLIS {
         for (int i = 0; i < nums.length; i++) {
             dp[i] = 1;
             for (int j = 0; j < i; j++) {
-                if (nums[i] > nums[j]) { // 记录最长子数组下标+1
+                if (nums[j] < nums[i]) { // 记录最长子数组下标+1
                     dp[i] = Math.max(dp[i], dp[j] + 1);
                 }
             }
